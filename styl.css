@@ -1,0 +1,1299 @@
+/*
+ ======= Basic Css =======
+ ======            =======
+
+*/
+
+* {
+  max-width:100% !important;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+
+}
+
+h1{
+font-size: 6em;
+letter-spacing: -1.5px;
+margin:0;
+
+}
+
+h2{
+font-size: 3.75em;
+letter-spacing: -0.5px;
+margin:0;
+}
+
+h3{
+font-size: 3em;
+letter-spacing:0;
+margin:0;
+}
+
+h4{
+font-size: 2.12em;
+letter-spacing: 0.25px;
+margin:0;
+
+}
+
+h5{
+font-size: 1.5em;
+letter-spacing: 0;
+margin:0;
+}
+
+h6{
+font-size: 1.25em;
+letter-spacing: 0.15;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+a,i{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/*
+ ==================================
+ ===========Container=============
+
+*/
+
+@media (min-width: 768px) {
+  .container {
+    transition: width 1s;
+    transition-timing-function: linear;
+    width: 750px;
+  }
+
+}
+@media (min-width: 992px) {
+  .container {
+    transition: width 1s;
+    transition-timing-function: linear;
+    width: 980px;
+  }
+
+}
+@media (min-width: 1185px) {
+  .container {
+    transition: width 1s;
+    transition-timing-function: linear;
+    width: 1175px;
+  }
+
+}
+
+
+
+
+/*
+ ======= Header =======
+ ======================
+
+*/
+
+header{
+  background-image: url(asset/image/banner.jpg);
+  background-size: cover;
+  color:white;
+  height: 935;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.raw {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.navbar-atas{
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 30px;
+}
+
+.navbar-atas-kiri{
+  height: 30px;
+  display: flex;
+  align-items: center;
+
+}
+
+.navbar-atas-kiri  li{
+  padding: 0 20px;
+  list-style-type: none;
+}
+
+.navbar-atas-kiri  a{
+  color: white;
+  text-decoration: none;
+}
+.navbar-atas-kiri i {
+  margin-right: 5px;
+}
+
+.navbar-atas-kanan{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  float: right;
+  width: 20%;
+  padding-right:20px;
+}
+
+.navbar-atas-kanan li{
+  padding: 0 15px;
+  list-style-type: none;
+
+}
+
+.navbar-atas-kanan li a{
+  color:white;
+}
+
+.pencarian{
+  width: 8%;
+  border-left: 1px solid white;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.navbar-bawah{
+  border-top: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 79px;
+  width: 100%;
+  clear: both;
+}
+
+.brand{
+padding-left:40px;
+height: 78px;
+}
+
+.navbar-bawah ul{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.navbar-bawah li {
+  list-style-type: none;
+  font-size: 20px;
+  padding: 27px 18px;
+}
+
+.navbar-bawah a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-bawah li:hover{
+background-color: black;
+color: white;
+}
+
+
+
+.Navbar__Link-toggle {
+  display: none;
+}
+
+
+/*
+ ==================================
+ Navbar kiri dan navbar kanan
+ =====Responsive 1052px screeen====
+
+*/
+
+@media (min-width: 768px) {
+  .navbar-left {
+    float: left !important;
+    margin-top:0;
+  }
+  .navbar-right {
+    float: right !important;
+    margin-top: 0;
+
+}
+}
+
+/*
+ ==================================
+ Navbar
+ =====Responsive 1052px screeen====
+
+*/
+
+@media screen and (max-width: 1052px) {
+
+
+.navbar-atas-kiri{
+  transition: display 1s;
+  transition-timing-function: linear;
+  display: none;
+
+}
+
+.navbar-atas-kanan{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  height: 30px;
+  float: right;
+  width: 89%;
+  border: 1px solid blue;
+  padding-right:20px;
+  transition: width 3s;
+}
+
+.pencarian{
+  float: right;
+}
+
+.brand{
+  float: left;
+  margin-left: 0;
+  padding:0;
+}
+
+}
+
+/*
+ ==================================
+ Navbar
+ =====Responsive 998px screeen====
+
+*/
+
+
+@media screen and (max-width: 998px) {
+
+.navbar-atas-kanan{
+float:left;
+width: 30%;
+}
+
+.moto-banner p{
+  width: 10%;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+.brand{
+  display: none;
+}
+
+.navbar-atas{
+  display:none;
+}
+
+.main-menu{
+  flex-direction: column;
+}
+
+.navbar-bawah ul{
+padding: 0;
+}
+
+.main-menu li{
+  display: none;
+}
+
+.responsive li {
+  padding: 10px 0 ;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-menu li:hover{
+background-color: red;
+}
+
+.navbar-bawah{
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+.Navbar__ToggleShow {
+      display: flex;
+    }
+
+.Navbar__Link-toggle {
+      display: flex;
+      justify-content: flex-end;
+      cursor: pointer;
+      padding: 5px 0 ;
+     }
+
+}
+
+/*
+ ==================================
+ Jumbotron
+ ==================================
+
+*/
+
+.frame-moto-banner{
+  height: 590px;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.md-2 {
+  float: left;
+  width: 49.5%;
+}
+
+.moto-banner{
+display:flex;
+height: 588px;
+flex-direction: column;
+justify-content: center;
+}
+
+.moto-banner h3{
+  width: 56%;
+}
+
+.moto-banner p {
+  width: 49%;
+  font-size: 20px;
+  text-align: justify;
+  padding-top:20px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+}
+
+
+.form-pencarian{
+border: 1px solid black;
+width: 42%;
+background-color: white;
+color: rgba(0,0,0,0.6);
+text-align: center;
+z-index: 1;
+height: auto;
+margin-top:-830px;
+}
+
+.form-pencarian h4{
+  margin:50px 0 5px 0;
+}
+
+.input-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form-control{
+  width: 80%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+}
+
+.button-form-pencarian{
+  width: 84%;
+  height: 41px;
+  margin: 10px 0 50px 0;
+  padding: 6px 40px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: white;
+  background-color:#006fe6;
+  border: 1px solid #006fe6;
+}
+
+.button-form-pencarian:hover{
+  color: white;
+  background-color:#000000;
+  border: 1px solid #000000;
+  width: 90%;
+}
+
+.form-pencarian p{
+  font-size: 20px;
+  text-align:center;
+  margin:0 0 20px 0;
+
+}
+
+.frame-form-pencarian {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.transparant-blue{
+  background-color: rgba(51, 102, 204, 0.5);
+}
+
+.blue-moto{
+  width: 55%;
+  font-size: 20px;
+  text-align: justify;
+  height: 211px;
+  display: flex;
+  align-items: center;
+
+}
+
+/*
+ ==================================
+ Jumbotron
+ ==========Responsive =============
+
+*/
+
+
+@media screen and (max-width: 998px) {
+.moto-banner p{
+  padding-left:0;
+}
+.moto-banner h3{
+width:50%;
+}
+
+.form-control{
+  width:75%;
+}
+
+
+
+}
+
+@media screen and (max-width: 767px) {
+
+.frame-moto-banner
+{
+  height: auto;
+}
+.moto-banner{
+  margin-top:20px;
+  justify-content: flex-start;
+  text-align: center;
+  height: auto;
+}
+
+.moto-banner h3{
+  flex-direction: column;
+  width: auto;
+  font-size: 2.12em;
+}
+
+.moto-banner p{
+  display: block;
+  width: auto;
+  text-align: center;
+}
+
+  .form-pencarian{
+    margin:10px 0 30px 30px;
+    width: 100%;
+  }
+
+  .form-pencarian h4{
+    font-size: 1.5em;
+  }
+
+  .form-pencarian p{
+    font-size: 16px;
+  }
+
+  .form-control{
+    width:82%;
+  }
+
+  .transparant-blue{
+    background:none;
+}
+
+  .blue-moto{
+    display: none;
+  }
+
+}
+
+/*
+ ==================================
+    find tour for your type
+ ==========PC Komputer=============
+
+ */
+.find-tour{
+  height: auto;
+  background-image: url(asset/image/back-2.png);
+  background-size: cover;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.find-tour h4{
+
+}
+
+.find-tour p{
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.tour-image-galery{
+  display: flex;
+  justify-content: center;
+  padding-top:20px;
+  padding-bottom: 100px;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tour-image{
+  position: relative;
+  width: 24%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-rounded{
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  }
+
+.text-background{
+    margin:0;
+    position: absolute;
+    height: 221px;
+    width: 221px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 50%;
+  }
+
+.text{
+  font-size: 20px;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/*
+ ==================================
+    find tour for your type
+ ===========Responsive=============
+
+ */
+ @media screen and (max-width: 1184px) {
+
+ }
+
+@media screen and (max-width: 998px) {
+  .tour-image{
+    width: 48%;
+    padding: 10px 0;
+  }
+
+}
+
+ @media screen and (max-width: 767px) {
+   .find-tour{
+     padding-top:30px;
+     height: auto;
+   }
+
+   .tour-image{
+     width: 98%;
+     padding: 10px 0;
+   }
+
+   .tour-image-galery{
+     padding-bottom:30px;
+   }
+
+   .find-tour h4{
+     font-size: 1.5em;
+   }
+
+ }
+
+ /*
+  ==================================
+          Deasl and Discount
+  ==================================
+
+  */
+
+.deals{
+  background-image: url(asset/image/back-3.jpg);
+  height:auto;
+  background-size: cover;
+}
+
+.henhen{
+  height: auto;
+  background-color: rgba(63,139,219,0.9);
+}
+
+.deals h4{
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 100px;
+
+}
+
+.lukmana{
+  display: flex;
+  justify-content:center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom:100px;
+
+}
+
+.surfing{
+  width:30%;
+  background-color: white;
+  margin:16px;
+  box-sizing: border-box;
+}
+
+
+.row{
+  position: relative;
+  width:100%;
+}
+
+.image-surf{
+  width: 100%;
+  height: auto;
+  padding-left: 15px;
+}
+
+.surfing h5{
+  margin:0;
+  padding-top:30px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: grey;
+}
+
+.harga{
+  background-color: #47a0ff;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  position: absolute;
+  bottom: : 10%;
+  left: 50%;
+  transform: translate(-30%, -50%);
+  margin:auto;
+
+}
+.harga span{
+  text-decoration:line-through;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-right: 2px;
+  font-size: 16px;
+}
+
+.text-surf{
+margin:0;
+padding:0 30px;
+text-align:justify;
+}
+
+.surfing input{
+background-color: #006fe6;
+border: 1px solid #006fe6;
+width: 70%;
+height: 10%;
+color: white;
+margin: 50px auto ;
+align-items: center;
+display: flex;
+justify-content: center;
+
+}
+.surfing input:hover{
+  cursor:pointer;
+  background-color: black;
+  width: 80%;
+}
+
+
+ /*
+  ==================================
+          Deasl and Discount
+  ===========Responsive=============
+
+  */
+
+@media screen and (max-width: 1184px) {
+}
+
+@media screen and (max-width: 998px) {
+  .surfing{
+    width:45%;
+    background-color: white;
+    margin:16px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .deals h4{
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top:30px;
+    font-size: 1.5em;
+  }
+
+  .surfing{
+    width:80%;
+    background-color: white;
+    margin:16px;
+    box-sizing: border-box;
+  }
+
+  .lukmana{
+    padding-bottom:30px;
+  }
+}
+
+
+
+ /*
+  ==================================
+        Galery Beautiful Trip
+  ==================================
+
+  */
+
+
+.beautiful-trip{
+  text-align: center;
+  color: #606060;
+}
+
+.beautiful-trip h4{
+  margin: 100px 0;
+}
+
+.galery-beautiful-trips{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.image-beautiful-trips{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 33.333%;
+  flex-wrap: wrap;
+
+}
+
+.image-beautiful{
+  width: 100%;
+  height: auto;
+}
+
+.background-text{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height:100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+/*
+ ==================================
+       Galery Beautiful Trip
+ ===========Responsive=============
+
+ */
+
+@media screen and (max-width: 1184px) {
+}
+
+@media screen and (max-width: 998px) {
+  .image-beautiful-trips{
+    width: 50%;
+}
+}
+
+@media screen and (max-width: 767px) {
+  .image-beautiful-trips{
+    width: 100%;
+  }
+
+  .beautiful-trip h4{
+    margin: 30px 0;
+    padding:0 15px;
+    font-size: 1.5em;
+  }
+
+}
+
+
+/*
+ ==================================
+          News and Event
+ ==================================
+
+ */
+
+.news-event{
+  text-align: center;
+  color: #353535;
+  width: 90%;
+  margin: 0 auto;
+  margin-top:100px;
+  margin-bottom:100px;
+
+}
+
+.news-event p:nth-child(2){
+  text-align:center;
+  width:80%;
+  margin:0 auto;
+  margin-top:40px;
+  margin-bottom:30px;
+
+}
+
+.news-event h4 {
+}
+
+
+.image-event{
+  width: 100%;
+  height: auto;
+}
+
+.news{
+float: left;
+width: 30.3%;
+margin: 16px;
+}
+
+.lukito{
+  margin:0 auto;
+  box-sizing: border-box;
+
+}
+
+.lukito:after, .lukito:before{
+    content: "";
+    display: table;
+    clear: both;
+    box-sizing: inherit;
+}
+
+
+.content-news{
+padding: 10px;
+box-sizing: border-box;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.content-news h5 , .content-news i, .content-news p {
+  margin:20px 0 0 0;
+  text-align:left;
+}
+
+.content-news h5{
+  color:#47a0ff;
+}
+
+.content-news i{
+width:49%;
+float: left;
+}
+
+.content-news i::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.content-news p{
+  margin-bottom: 20px;
+}
+
+
+/*
+ ==================================
+          News and Event
+ ===========Responsive=============
+
+ */
+
+
+ @media screen and (max-width: 1336px) {
+   .lukito{
+     width: 100%;
+     padding-left: 50px;
+   }
+   .news{
+     width:28%;
+   }
+ }
+
+@media screen and (max-width: 1184px) {
+}
+
+@media screen and (max-width: 998px) {
+  .content-news i{
+  display:block;
+  width: 100%;
+  margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .news-event{
+    margin:25px 0;
+}
+
+  .news-event h4 {
+    font-size: 1.5em;
+  }
+
+  .news{
+    width:40%;
+  }
+
+  .lukito{
+    padding:0;
+  }
+
+  .content-news i{
+  width:100%;
+  margin: 5px 0;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .news{
+    width:100%;
+  }
+
+  .content-news i{
+  width:49%;
+  float: left;
+  margin: 5px 0;
+  }
+
+
+}
+
+
+/*
+ ==================================
+           Luxury Travel
+ ==================================
+
+ */
+
+.luxury-travel{
+  background-image: url(asset/image/luxuri.jpg);
+  width: 100%;
+  height: 580px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.luxury-travel h1{
+margin:20px;
+}
+
+.luxury-travel button{
+margin:20px;
+border-radius: 50%;
+width: 150px;
+height: 150px;
+background-color: #47a0ff;
+color: white;
+border: 1px solid #47a0ff;
+outline: none !important;
+
+}
+
+.luxury-travel button:hover{
+  background-color:white;
+  color: #47a0ff;
+}
+
+/*
+ ==================================
+           Luxury Travel
+ ===========Responsive=============
+
+ */
+
+@media screen and (max-width: 1184px) {
+}
+
+@media screen and (max-width: 998px) {
+  .luxury-travel h1{
+    font-size: 3.75em;
+    text-align: center;
+  }
+
+  .luxury-travel h4{
+    font-size: 1.5em;
+    text-align: center;
+
+  }
+
+  .luxury-travel button{
+  width: 100px;
+  height: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+}
+
+
+
+/*
+ ==================================
+           Sidebar Footer
+ ==================================
+
+ */
+
+.sidebar-footer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom:90px;
+  flex-wrap: wrap;
+
+}
+
+.sidebar{
+}
+
+.sidebar h6{
+  margin-bottom: 20px;
+}
+
+.alamat{
+  padding:10px 0;
+  color: red;
+}
+
+.sidebar li{
+  list-style-type: none;
+  margin:10px 0;
+}
+.sidebar a{
+text-decoration: none;
+color: black;
+}
+
+.sidebar li a:hover{
+  color: #47a0ff;
+}
+
+.sosmed{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.kaki{
+  background: #47a0ff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 10px 0 0 ;
+}
+
+.sidebar i{
+  color: white;
+}
+
+.koka{
+  width: auto;
+  height:50px;
+  border: 2px solid #f2f2f2;
+  border-radius: 12px;
+  background:#f2f2f2;
+  display: flex;
+  align-items:  center;
+  padding:5px;
+}
+
+.koka::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.sidebar input[type=text] {
+width: 70%;
+float: left;
+border: none;
+height: 90%;
+background: #f2f2f2;
+color:black;
+}
+
+.sidebar input[type=text]::placeholder{
+font-size: 14px;
+color:black;
+}
+
+.sidebar input[type=text]:focus{
+  outline: none !important;
+  /*
+  border:1px solid red;
+  box-shadow: 0 0 10px red;
+  */
+}
+
+.sidebar input[type=submit]{
+  float: left;
+  width: 37%;
+  height: 95%;
+  background: #006fe6;
+  color: white;
+  border:2px solid #006fe6;
+  border-radius: 12px;
+}
+
+
+/*
+ ==================================
+           Sidebar Footer
+ ===========Responsive=============
+
+ */
+
+@media screen and (max-width: 1184px) {
+}
+
+@media screen and (max-width: 998px) {
+  .sidebar-footer{
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom:90px;
+  }
+
+  .sidebar{
+    width: 48%;
+    margin: 20px 0;
+  }
+
+  .sosmed{
+  justify-content:flex-start;
+
+}
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 500px) {
+  .sidebar{
+    width: 100%;
+  }
+
+  .sidebar-footer{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom:50px;
+  }
+}
+
+/*
+ ==================================
+              Footer
+ ==================================
+
+ */
+
+footer{
+  border-top:1px solid rgba(0, 0, 0, 0.1);
+  padding:20px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
